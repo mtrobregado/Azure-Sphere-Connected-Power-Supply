@@ -463,7 +463,7 @@ static void UartEventHandler(EventData* eventData)
 }
 
 /// <summary>
-///     Handle button timer event: if the button is pressed, report the event to the IoT Hub.
+///     Power Supply timer event
 /// </summary>
 static void PsupplyTimerEventHandler(EventData* eventData)
 {
