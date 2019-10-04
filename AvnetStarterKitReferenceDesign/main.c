@@ -471,8 +471,7 @@ static void PsupplyTimerEventHandler(EventData* eventData)
 	if (ModbusTransactionFlag == false)
 	{
 		ModbusTransactionFlag = true;
-		ModbusMaster_readHoldingRegisters(2, 5);  // slave: read a range of 16-bit registers starting at register 0 to 10
-  		//ModbusMaster_readHoldingRegisters(0, 11);  // slave: read a range of 16-bit registers starting at register 0 to 10
+		ModbusMaster_readHoldingRegisters(2, 5);  // slave: read a range of 16-bit registers starting at register 2 to 5  		
 	}
 }
 
