@@ -421,7 +421,6 @@ static uint8_t ModbusMaster_ModbusMasterReceive(uint8_t* data, uint8_t length)
 				VOut, AOut, POut, VIn, lsm6dsoTemperature_degC, network_data.rssi);
 
 
-		//snprintf(pjsonBuffer, JSON_BUFFER_SIZE, "{ \"temp\": \"%.2f\",  \"rssi\": \"%d\"}", lsm6dsoTemperature_degC, network_data.rssi);
 		Log_Debug("\n[Info] Sending telemetry: %s\n", pjsonBuffer);
 		AzureIoT_SendMessage(pjsonBuffer);
 		free(pjsonBuffer);
